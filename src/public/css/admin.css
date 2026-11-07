@@ -1,0 +1,76 @@
+/* =====================================================================
+   admin.css  Estilos da parte de administración.
+   Complementa estilo.css. É só para uso interno polo que 
+   non ten adaptación a móbiles.
+   ===================================================================== */
+
+
+/* ---------- Contido central das páxinas de administración ---------- */
+.admin {
+    max-width: 1100px;
+    margin: 24px auto;
+    padding: 0 16px;
+}
+
+
+/* ----------  Formulario de acceso ----------
+   Caixa branca, estreita e centrada co usuario e o contrasinal. */
+.caixa-acceso {
+    max-width: 340px;
+    margin: 48px auto;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-top: 4px solid #444;
+    padding: 24px;
+}
+.caixa-acceso h2 { margin: 0 0 16px; font-weight: normal; }
+
+/* Etiquetas e campos: un debaixo do outro */
+.caixa-acceso label { display: block; margin-top: 12px; }
+.caixa-acceso input {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    margin-top: 4px;
+    font-size: 1em;
+    border: 1px solid #bbb;
+}
+
+/* Mensaxe para erro ou de sesión pechada */
+.mensaxe-acceso {
+    background: #f4f4f2;
+    border-left: 4px solid #888;
+    padding: 8px 12px;
+}
+
+.volver { margin: 16px 0 0; font-size: 0.85em; text-align: center; }
+.volver a { color: #777; }
+
+
+/* ---------- Botóns ---------- */
+button {
+    margin-top: 16px;
+    padding: 8px 20px;
+    font-size: 1em;
+    font-family: inherit;
+    background: #444;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+button:hover { background: #222; }
+
+
+/* ---------- Barra superior para as páxinas internas ----------
+   Indica o usuario que iniciou sesión e ten o botón "Saír" */
+.barra-admin {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 8px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+}
+.barra-admin form, .barra-admin button { margin: 0; }
