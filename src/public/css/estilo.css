@@ -1,0 +1,146 @@
+/* =====================================================================
+   estilo.css  Deseño da versión de demostración.
+
+   Unidades:
+     px  píxeles (medida fixa)
+     em  proporcional ao tamaño da letra (1.5em = unha vez e media)
+     fr  "fracción" do espazo libre nunha grella (1fr = todo o que sobre)
+   ===================================================================== */
+
+
+/* ---------- Páxina completa ----------
+   Valores por defecto para todo o documento: tipo de letra, cor de
+   texto e fondo, separación das liñas. */
+body {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    color: #222;
+    background: #f4f4f2;
+    line-height: 1.5;
+}
+
+
+/* ---------- Cabeceira ----------
+   Franxa superior de ancho completeo co nome da funeraria. */
+.cabeceira {
+    text-align: center;
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+    padding: 24px 16px;
+}
+.cabeceira h1 {
+    margin: 0;
+    font-weight: normal;
+    font-size: 2em;
+}
+
+
+/* ---------- Distribución en dúas columnas ----------
+   unha de 240px para o contacto e o resto do espazo
+   para as necrolóxicas. */
+.contido {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 16px;
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    gap: 32px;
+}
+
+/* No HTML o contacto vai despois das necrolóxicas (para que o cargar á 
+   paxina dende o móbil apareza o final). Indícase en que columna vai cada un: */
+.contacto { grid-column: 1; grid-row: 1; }   /* contacto
+main      { grid-column: 2; grid-row: 1; }   /* necrolóxicas
+
+
+/* ---------- Título da columna dereita ----------
+   "Necrolóxicas de servizos funerarios" */
+.titulo-seccion {
+    font-weight: normal;
+    margin: 24px 0 0;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 8px;
+}
+
+
+/* ---------- Columna de contacto ----------*/
+.contacto {
+    align-self: start;
+    position: sticky;
+    top: 16px;
+    margin-top: 24px;
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 16px;
+}
+.contacto h2 { margin: 0 0 8px; font-size: 1.1em; }
+.contacto a  { color: #333; }
+
+/* Enlace para administrar */
+.contacto .acceso {
+    margin-top: 24px;
+    padding-top: 8px;
+    border-top: 1px solid #eee;
+    font-size: 0.85em;
+}
+.contacto .acceso a { color: #777; }
+
+
+/* ---------- Tarxeta de cada necrolóxica ----------
+   Cada necrolóxica leva nunha caixa branca
+   cunha franxa escura na parte superior. */
+.esquela {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-top: 4px solid #444;
+    margin: 24px 0;
+    padding: 16px 24px;
+}
+/* nome da persoa falecida */
+.esquela h3 {
+    margin: 0 0 8px;
+    font-weight: normal;
+    font-size: 1.5em;
+}
+/* alcume: cursiva, máis pequeno */
+.alcume  { font-style: italic; color: #555; font-size: 0.8em; }
+/* data de falecemento, idade, localidade */
+.datos   { color: #444; }
+/* agradecementos */ 
+.mensaxe {                                        
+    font-style: italic;
+    color: #555;
+    border-top: 1px solid #eee;
+    padding-top: 8px;
+}
+
+/* Datos dos servizos (velorio, funeral, enterro): duas
+   columnas, etiqueta á esquerda e valor á dereita.
+   max-content: a primeira columna mide o que a etiqueta máis longa. */
+.servizos {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 4px 16px;
+}
+.servizos dt { font-weight: bold; }
+.servizos dd { margin: 0; }
+
+
+/* ---------- Avisos ----------
+   Mensaxes se non hai necrolóxicas ou hai error de conexión. */
+.aviso {
+    text-align: center;
+    color: #666;
+    margin: 48px 0;
+}
+
+
+/* ---------- Pantallas estreitas (móbiles) ----------
+   As regras deste bloque só se aplican se a pantalla menos de 700px */
+@media (max-width: 700px) {
+    .contido  { grid-template-columns: 1fr; gap: 0; }
+    .contacto, main { grid-column: auto; grid-row: auto; } 
+    .contacto { position: static; margin-bottom: 24px; }
+    .servizos { grid-template-columns: 1fr; }
+    .servizos dd { margin-bottom: 8px; }
+}
