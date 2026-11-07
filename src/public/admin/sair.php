@@ -1,6 +1,6 @@
 <?php
 // =====================================================================
-// admin/sair.php  Pechar a sesión
+// admin/sair.php - Pechar a sesión
 //
 // Só acepta POST (o botón "Saír"): Para que una redirección ou
 // recarga do navegador non peche a sesión.

@@ -1,6 +1,6 @@
 <?php
 // =====================================================================
-// admin/login.php  Formulario de acceso para usuarios
+// admin/login.php - Formulario de acceso para usuarios
 //
 // GET:  amosa o formulario.
 // POST: valida o usuario contra o LDAP e crea a sesión.
@@ -57,7 +57,7 @@ $funeraria = $config['funeraria'];
 <html lang="gl">
 <head>
     <meta charset="utf-8">
-    <title>Acceso  <?= e($funeraria['nome']) ?></title>
+    <title>Acceso - <?= e($funeraria['nome']) ?></title>
     <link rel="stylesheet" href="/css/estilo.css">
     <link rel="stylesheet" href="/css/admin.css">
 </head>

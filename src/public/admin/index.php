@@ -1,6 +1,6 @@
 <?php
 // =====================================================================
-// admin/index.php  Inicio da parte de administración
+// admin/index.php - Inicio da parte de administración
 //
 // Dede aqui faise a xestión das necrolóxicas.
 // =====================================================================
@@ -20,7 +20,7 @@ $funeraria = $config['funeraria'];
 <html lang="gl">
 <head>
     <meta charset="utf-8">
-    <title>Xestión de necrolóxicas  <?= e($funeraria['nome']) ?></title>
+    <title>Xestión de necrolóxicas - <?= e($funeraria['nome']) ?></title>
     <link rel="stylesheet" href="/css/estilo.css">
     <link rel="stylesheet" href="/css/admin.css">
 </head>

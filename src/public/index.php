@@ -1,6 +1,6 @@
 <?php
 // =====================================================================
-// index.php  Parte pública: Necrolóxicas dos servizos vixentes
+// index.php - Parte pública: Necrolóxicas dos servizos vixentes
 //
 // Amosa as necrolóxicas cuxa data de funeral é igual ou posterior á
 // data actual. O filtro faino MariaDB con CURDATE().
@@ -45,7 +45,7 @@ $telefono_enlace = preg_replace('/[^0-9+]/', '', $funeraria['telefono']);
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Necrolóxicas  <?= e($funeraria['nome']) ?></title>
+    <title>Necrolóxicas - <?= e($funeraria['nome']) ?></title>
     <link rel="stylesheet" href="/css/estilo.css">
 </head>
 <body>

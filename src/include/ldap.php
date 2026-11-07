@@ -1,6 +1,6 @@
 <?php
 // =====================================================================
-// ldap.php  Autenticación dos editores contra OpenLDAP
+// ldap.php - Autenticación dos editores contra OpenLDAP
 //
 // PHP non garda nin comproba contrasinais: pregúntalle ó LDAP se son
 // correctos (ldap_bind) e comproba se o usuario pertence ó grupo.

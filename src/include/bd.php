@@ -1,6 +1,6 @@
 <?php
 // =====================================================================
-// bd.php  Conexión coa base de datos MariaDB usando PDO
+// bd.php - Conexión coa base de datos MariaDB usando PDO
 // =====================================================================
 
 /**

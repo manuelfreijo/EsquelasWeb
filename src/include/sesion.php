@@ -1,6 +1,6 @@
 <?php
 // =====================================================================
-// sesion.php  Sesións da parte de administración
+// sesion.php - Sesións da parte de administración
 //
 // As opcións de seguridade da cookie (HttpOnly, Secure, SameSite=Strict)
 // están en /etc/php.d/99-seguridade.ini, xa definidas
