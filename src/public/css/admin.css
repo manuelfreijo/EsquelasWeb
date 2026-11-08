@@ -109,6 +109,8 @@ button.perigo:hover { background: #5e1212; }
     border-left: 4px solid #888;
     padding: 8px 12px;
     margin: 16px 0;
+    /* estilo.css centra os avisos da parte pública */
+    text-align: left;  
 }
 .aviso.erro { border-left-color: #8b1e1e; background: #fbf1f1; }
 .aviso p, .aviso ul { margin: 4px 0; }
