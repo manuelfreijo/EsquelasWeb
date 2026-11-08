@@ -69,7 +69,7 @@ $telefono_enlace = preg_replace('/[^0-9+]/', '', $funeraria['telefono']);
 
             <?php else: ?>
                 <?php foreach ($esquelas as $n): ?>
-                    // Modificado para sacar ó código fora e poder reutilizalo
+                    <!-- Modificado para sacar ó código fora e poder reutilizalo -->
                     <?php require __DIR__ . '/../include/tarxeta_esquela.php'; ?>
                 <?php endforeach; ?>
             <?php endif; ?>
