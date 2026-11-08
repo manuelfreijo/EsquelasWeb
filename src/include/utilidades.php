@@ -49,3 +49,12 @@ function hora_curta(string $hora): string
 {
     return substr($hora, 0, 5);
 }
+
+/**
+ * Converte unha data da base de datos (AAAA-MM-DD) en DD/MM/AAAA.
+ */
+function data_curta(string $data): string
+{
+    $d = DateTime::createFromFormat('Y-m-d', $data);
+    return $d === false ? e($data) : $d->format('d/m/Y');
+}

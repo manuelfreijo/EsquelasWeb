@@ -74,3 +74,104 @@ button:hover { background: #222; }
     border-bottom: 1px solid #ccc;
 }
 .barra-admin form, .barra-admin button { margin: 0; }
+
+
+
+
+
+
+/* ---------- Título da sección e botón "Nova necrolóxica" ---------- */
+.titulo-seccion {
+    display: flex;
+    justify-content: space-between;      /* título á esquerda, botón á dereita */
+    align-items: center;
+}
+.titulo-seccion h2 { margin: 0; }
+
+/* Enlace que se amosa como botón (mesmas cores que button) */
+.boton {
+    display: inline-block;
+    padding: 8px 20px;
+    background: #444;
+    color: #fff;
+    text-decoration: none;
+}
+.boton:hover { background: #222; }
+
+/* Botón para accións que non se poden desfacer (eliminar) */
+button.perigo { background: #8b1e1e; }
+button.perigo:hover { background: #5e1212; }
+
+
+/* ---------- Avisos (resultados dunha acción ou erros) ---------- */
+.aviso {
+    background: #f4f4f2;
+    border-left: 4px solid #888;
+    padding: 8px 12px;
+    margin: 16px 0;
+}
+.aviso.erro { border-left-color: #8b1e1e; background: #fbf1f1; }
+.aviso p, .aviso ul { margin: 4px 0; }
+
+
+/* ---------- Táboa co listaxe de necrolóxicas ---------- */
+.listaxe {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 16px;
+    background: #fff;
+}
+.listaxe th, .listaxe td {
+    text-align: left;
+    padding: 8px 10px;
+    border-bottom: 1px solid #ddd;
+}
+.listaxe th { background: #eee; font-weight: normal; }
+.listaxe tr:hover td { background: #f7f7f5; }
+.listaxe td:first-child { white-space: nowrap; }
+
+/* Necrolóxicas con funeral xa pasado: en gris */
+.listaxe tr.pasada td, .listaxe tr.pasada a { color: #999; }
+
+/* Enlaces Ver, Modificar e Eliminar separados entre si */
+.accions { white-space: nowrap; }
+.accions a { margin-right: 10px; }
+
+
+/* ---------- Vista previa da tarxeta (para ver e eliminar) ---------- */
+.vista-previa { max-width: 700px; }
+
+
+/* ---------- Fila de botóns ó pé das páxinas ---------- */
+.botons { margin-top: 20px; display: flex; gap: 16px; align-items: center; }
+.botons button { margin: 0; }
+
+
+/* ---------- Formulario para crear e modificar ---------- */
+.formulario { max-width: 700px; }
+.formulario fieldset {
+    border: 1px solid #ddd;
+    background: #fff;
+    margin: 0 0 16px;
+    padding: 8px 16px 16px;
+}
+.formulario legend { padding: 0 6px; color: #555; }
+
+/* Etiquetas sobre cada campo; campos a todo o ancho */
+.formulario label { display: block; margin-top: 12px; }
+.formulario input, .formulario textarea {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 6px 8px;
+    margin-top: 4px;
+    font-size: 1em;
+    font-family: inherit;
+    border: 1px solid #bbb;
+}
+
+/* Dous campos curtos na mesma liña (p. ex. data e hora) */
+.fila { display: flex; gap: 16px; }
+.fila > div { flex: 1; }
+
+.nota { font-size: 0.85em; color: #777; }
